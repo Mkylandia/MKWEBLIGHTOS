@@ -1,26 +1,22 @@
 /* styles-light.css - MKWEB OS 7: Ultimate Elegance (Lightweight Version) */
-/* Minimal/optimized for weaker PCs - no heavy blur, reduced shadows, simple animations */
+/* Minimal/optimized for schwache PCs */
 
 :root {
   --fluid-min-font: 0.75vw;
   --fluid-max-font: 1vw;
   --fluid-header-font: 1.2vw;
   --fluid-time-font: 3vw;
-
   --fluid-padding-xs: 0.25rem;
   --fluid-padding-s: 0.5rem;
   --fluid-padding-m: 0.8rem;
   --fluid-padding-l: 1.2rem;
   --fluid-padding-xl: 1.6rem;
-
   --fluid-gap-xs: 0.25rem;
   --fluid-gap-s: 0.5rem;
   --fluid-gap-m: 0.9rem;
-
   --r: 12px;
   --border-width: 1px;
   --content-max-width: 1100px;
-
   --bg: #111;
   --fg: #f7f7f7;
   --dim: #bcbcbc;
@@ -28,7 +24,6 @@
   --ah: #b080ff;
   --gl: #191725;
   --gb: #282038;
-
   --acc-rgb: 138, 78, 212;
   --fg-rgb: 247, 247, 247;
 }
@@ -38,7 +33,6 @@ html {
   scroll-behavior: smooth;
   font-size: clamp(8px, 0.85vw, 16px);
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -46,7 +40,6 @@ html {
   font-family: 'Inter', Arial, sans-serif;
   color: var(--fg);
 }
-
 body {
   background: var(--bg);
   color: var(--fg);
@@ -57,7 +50,6 @@ body {
   flex-direction: column;
   position: relative;
 }
-
 /* ===== Container & Layout ===== */
 .container {
   width: 100%;
@@ -69,21 +61,18 @@ body {
   align-items: center;
   gap: var(--fluid-gap-m);
 }
-
 .main-grid {
   width: 100%;
   display: flex;
   gap: var(--fluid-gap-m);
   flex-wrap: wrap;
 }
-
 .grid-left, .grid-right {
   flex: 1 1 340px;
   display: flex;
   flex-direction: column;
   gap: var(--fluid-gap-m);
 }
-
 /* ===== Glas-Effekt (vereinfacht, kein Blur) ===== */
 .glass {
   background: var(--gl);
@@ -97,7 +86,6 @@ body {
   box-shadow: 0 6px 18px rgba(var(--acc-rgb), 0.10);
   transform: translateY(-2px);
 }
-
 /* ===== Header-Bereich ===== */
 .header {
   display: flex;
@@ -107,7 +95,6 @@ body {
   max-width: var(--content-max-width);
   padding: var(--fluid-padding-s) var(--fluid-padding-l);
 }
-
 .logo {
   font-size: clamp(1.1rem, var(--fluid-header-font), 2rem);
   font-weight: 800;
@@ -117,13 +104,11 @@ body {
 .logo:hover {
   color: var(--ah);
 }
-
 .controls {
   display: flex;
   gap: var(--fluid-gap-s);
   align-items: center;
 }
-
 button {
   padding: var(--fluid-padding-xs) var(--fluid-padding-s);
   font-weight: 600;
@@ -139,7 +124,6 @@ button:hover {
   background: var(--acc);
   color: #fff;
 }
-
 .user-avatar {
   width: 32px;
   height: 32px;
@@ -158,16 +142,13 @@ button:hover {
   background: var(--acc);
   color: #fff;
 }
-
 /* ===== Suchmaschinen-Auswahl ===== */
 .search-section {
   padding: var(--fluid-padding-s);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex-grow: 1;
 }
-
 .search-engines {
   display: flex;
   gap: var(--fluid-gap-xs);
@@ -175,7 +156,6 @@ button:hover {
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .search-engine {
   padding: 0.25rem 0.7rem;
   border-radius: 20px;
@@ -195,7 +175,6 @@ button:hover {
   color: #fff;
   border: 1px solid var(--acc);
 }
-
 /* ===== Suchbox ===== */
 .search-box {
   display: flex;
@@ -208,13 +187,11 @@ button:hover {
 .search-box:focus-within {
   border-color: var(--acc);
 }
-
 .search-icon {
   font-size: 1.3rem;
   color: var(--dim);
   margin-right: 0.5em;
 }
-
 #search {
   flex: 1;
   border: none;
@@ -228,7 +205,6 @@ button:hover {
 #search::placeholder {
   color: var(--dim);
 }
-
 /* ===== Zeit-Anzeige ===== */
 .time-display {
   text-align: center;
@@ -252,7 +228,6 @@ button:hover {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-
 /* ===== Zitate Sektion ===== */
 .quote-section {
   padding: var(--fluid-padding-l);
@@ -279,7 +254,6 @@ button:hover {
 #quote-author::before {
   content: "— ";
 }
-
 /* ===== Wetter Sektion ===== */
 .weather-link-section {
   padding: var(--fluid-padding-s);
@@ -327,7 +301,6 @@ button:hover {
   max-width: 90%;
   line-height: 1.35;
 }
-
 /* ===== Apps Bereich ===== */
 .apps-section {
   width: 100%;
@@ -344,14 +317,12 @@ button:hover {
   color: var(--dim);
   letter-spacing: 0.5px;
 }
-
 .apps-container {
   grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
   gap: var(--fluid-gap-s);
   padding: var(--fluid-padding-xs);
   display: grid;
 }
-
 .app-card {
   padding: 0.7rem;
   text-decoration: none;
@@ -385,7 +356,6 @@ button:hover {
   text-align: center;
   color: inherit;
 }
-
 /* ===== Hilfsklassen ===== */
 .sr-only {
   position: absolute;
@@ -398,7 +368,6 @@ button:hover {
   white-space: nowrap;
   border-width: 0;
 }
-
 /* ===== Media Queries ===== */
 @media (max-width: 900px) {
   .container {
